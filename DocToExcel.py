@@ -21,8 +21,6 @@ for file in files:
 	birthday = table.cell(0,10).text
 	identity  = table.cell(1,1).text
 	ID  = table.cell(1,5).text
-#	Addr = table.cell(2,1).text
-#	marr = table.cell(2,3).text
 	email = table.cell(4,5).text
 	phone = table.cell(4,9).text
 	addr = table.cell(3,10).text
@@ -35,11 +33,8 @@ for file in files:
 	list.append(birthday.strip())
 	list.append(identity.strip())
 	list.append(ID.strip())
-#	list.append(Addr.strip())
-#	list.append(marr.strip())
 	list.append(email.strip())
 	list.append(phone.strip())
-#	list.append(Addr.strip())
 
 	list.append(edu.split("\n")[0].strip())
 	list.append(edu.split("\n")[1].strip())
@@ -51,7 +46,5 @@ for file in files:
 	booksheet.append(list)
 
 #	print(name + sex + birthday + identity + ID  + email + phone + edu + work)
-#	print(edu.split("\n")[2])
-#	print(work.split("\n")[1])
 
 workbook.save(PATH + 'test.xlsx')
